@@ -12,8 +12,8 @@
   <meta property="og:site_name" content="ThreeSync">
   <meta property="og:title" content="ThreeSync — Free Roblox Models &amp; Systems">
   <meta property="og:description" content="Clean, free Roblox models and systems from the ThreeSync development group.">
-  <meta property="og:url" content="https://3sync.github.io/website/">
-  <meta property="og:image" content="https://3sync.github.io/website/assets/brand/threesync-social-banner.png">
+  <meta property="og:url" content="https://3sync.github.io/home/">
+  <meta property="og:image" content="https://3sync.github.io/home/assets/brand/threesync-social-banner.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" type="image/png" href="assets/brand/favicon.png">
@@ -21,7 +21,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -46,10 +46,17 @@
           <li><a href="#models">Free Models</a></li>
           <li><a href="#community">Community</a></li>
         </ul>
-        <a class="btn btn-primary btn-sm" href="https://www.roblox.com/communities/83523333/" target="_blank" rel="noopener noreferrer">
-          Join the Group
-          <span class="visually-hidden">(opens in a new tab)</span>
-        </a>
+        <div class="nav-cta">
+          <a class="btn btn-secondary btn-sm btn-discord" href="https://discord.gg/jBbWGXDCB" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon btn-icon--discord" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.32 4.37a19.8 19.8 0 0 0-4.89-1.52.07.07 0 0 0-.08.04c-.21.38-.44.87-.6 1.25a18.3 18.3 0 0 0-5.5 0 12.6 12.6 0 0 0-.61-1.25.08.08 0 0 0-.08-.04 19.7 19.7 0 0 0-4.88 1.52.07.07 0 0 0-.04.03C.53 9.05-.32 13.58.1 18.06a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.23-2a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1 0-.12l.37-.29a.07.07 0 0 1 .08-.01c3.93 1.79 8.18 1.79 12.07 0a.07.07 0 0 1 .08 0l.37.3a.08.08 0 0 1 0 .12c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.1c.36.7.77 1.37 1.22 2a.08.08 0 0 0 .08.03 19.8 19.8 0 0 0 6-3.03.08.08 0 0 0 .03-.05c.5-5.18-.84-9.67-3.55-13.66a.06.06 0 0 0-.03-.03ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.95 2.42-2.16 2.42Z"/></svg>
+            <span class="nav-discord-label">Discord</span>
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </a>
+          <a class="btn btn-primary btn-sm" href="https://www.roblox.com/communities/83523333/" target="_blank" rel="noopener noreferrer">
+            Join the Group
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </a>
+        </div>
       </div>
     </nav>
   </header>
@@ -62,7 +69,7 @@
         <h1 id="hero-title">Free, ready-to-use systems for Roblox creators.</h1>
         <p class="lead">
           ThreeSync builds clean, reliable models you can drop straight into your game.
-          No paywalls and no clutter. Pick one up from the Creator Store and get back to building.
+          Every model is free to take from the Creator Store, so you can get back to building.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary btn-lg" href="#models">
@@ -76,7 +83,7 @@
         </div>
         <ul class="hero-facts" aria-label="At a glance">
           <li><strong>3</strong> free models</li>
-          <li><strong>100%</strong> free to use</li>
+          <li><strong>Free</strong> on the Creator Store</li>
           <li><strong>Live</strong> demo games</li>
         </ul>
       </div>
@@ -95,13 +102,13 @@
           <p class="eyebrow">Free Models</p>
           <h2 id="models-title">Everything here is free.</h2>
           <p class="section-sub">Get any model from the Roblox Creator Store, or try it first in its demo game.</p>
+          <p class="section-note">Some models include optional game pass perks, such as removing the ThreeSync branding.</p>
         </header>
 
         <ul class="product-grid">
           <li class="product-card reveal">
-            <div class="product-media product-media--placeholder" role="img" aria-label="ThreeSync Admin System cover">
-              <span class="placeholder-title">Admin<br>System</span>
-              <img class="placeholder-badge" src="assets/brand/threesync-icon.png" alt="" width="160" height="160" loading="lazy">
+            <div class="product-media">
+              <img src="assets/products/admin-system.png" alt="ThreeSync Admin System cover image" width="512" height="512" loading="lazy">
             </div>
             <span class="badge-free">Free</span>
             <div class="product-body">
@@ -165,13 +172,20 @@
         <div class="community reveal">
           <div class="community-copy">
             <p class="eyebrow eyebrow--light">ThreeSync Community</p>
-            <h2 id="community-title">Join ThreeSync on Roblox.</h2>
-            <p>Join the group to hear about new releases and updates, and to follow what we're building next.</p>
+            <h2 id="community-title">Join the ThreeSync community.</h2>
+            <p>Join the Roblox group to hear about new releases and updates, or chat with us and get help on Discord.</p>
+            <div class="community-actions">
             <a class="btn btn-light btn-lg" href="https://www.roblox.com/communities/83523333/" target="_blank" rel="noopener noreferrer">
-              Join the community
+              Join on Roblox
               <svg class="btn-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7m0 0H8m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span class="visually-hidden">(opens in a new tab)</span>
             </a>
+            <a class="btn btn-outline-light btn-lg" href="https://discord.gg/jBbWGXDCB" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon btn-icon--discord" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.32 4.37a19.8 19.8 0 0 0-4.89-1.52.07.07 0 0 0-.08.04c-.21.38-.44.87-.6 1.25a18.3 18.3 0 0 0-5.5 0 12.6 12.6 0 0 0-.61-1.25.08.08 0 0 0-.08-.04 19.7 19.7 0 0 0-4.88 1.52.07.07 0 0 0-.04.03C.53 9.05-.32 13.58.1 18.06a.08.08 0 0 0 .03.05 19.9 19.9 0 0 0 5.99 3.03.08.08 0 0 0 .08-.03c.46-.63.87-1.3 1.23-2a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1 0-.12l.37-.29a.07.07 0 0 1 .08-.01c3.93 1.79 8.18 1.79 12.07 0a.07.07 0 0 1 .08 0l.37.3a.08.08 0 0 1 0 .12c-.6.35-1.22.65-1.87.9a.08.08 0 0 0-.04.1c.36.7.77 1.37 1.22 2a.08.08 0 0 0 .08.03 19.8 19.8 0 0 0 6-3.03.08.08 0 0 0 .03-.05c.5-5.18-.84-9.67-3.55-13.66a.06.06 0 0 0-.03-.03ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.15-1.08-2.15-2.42 0-1.33.95-2.42 2.15-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.95 2.42-2.16 2.42Z"/></svg>
+              Join our Discord
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+            </div>
           </div>
           <img class="community-mark" src="assets/brand/threesync-mark-white.png" alt="" width="800" height="500" loading="lazy">
         </div>
@@ -199,6 +213,7 @@
         <h2 class="footer-heading">Roblox</h2>
         <ul>
           <li><a href="https://www.roblox.com/communities/83523333/" target="_blank" rel="noopener noreferrer">ThreeSync Community<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="https://discord.gg/jBbWGXDCB" target="_blank" rel="noopener noreferrer">Discord Server<span class="visually-hidden"> (opens in a new tab)</span></a></li>
           <li><a href="https://create.roblox.com/store/asset/73814079384926/ThreeSync-Admin-Loader" target="_blank" rel="noopener noreferrer">Admin System<span class="visually-hidden"> (opens in a new tab)</span></a></li>
           <li><a href="https://create.roblox.com/store/asset/106541054539845/Donation-Board" target="_blank" rel="noopener noreferrer">Donation Board<span class="visually-hidden"> (opens in a new tab)</span></a></li>
           <li><a href="https://create.roblox.com/store/asset/124940578297384/Time-Played-Board" target="_blank" rel="noopener noreferrer">Time Played Board<span class="visually-hidden"> (opens in a new tab)</span></a></li>
