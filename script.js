@@ -63,9 +63,12 @@
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
 
-    revealItems.forEach(function (el, i) {
-      // Small stagger for cards that appear together.
-      if (el.classList.contains("product-card")) el.style.transitionDelay = (i % 3) * 70 + "ms";
+    revealItems.forEach(function (el) {
+      // Small left-to-right stagger for cards in the same row.
+      if (el.classList.contains("product-card")) {
+        var index = Array.prototype.indexOf.call(el.parentElement.children, el);
+        el.style.transitionDelay = (index % 3) * 70 + "ms";
+      }
       revealObserver.observe(el);
     });
   }
