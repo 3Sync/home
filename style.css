@@ -224,7 +224,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.eyebrow--light { color: rgba(255, 255, 255, 0.85); }
 
 .section { padding-block: clamp(72px, 10vw, 120px); }
 .section--tight { padding-top: 0; }
@@ -371,7 +370,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .community-copy { position: relative; z-index: 1; max-width: 520px; }
 .community h2 { font-size: clamp(30px, 4vw, 44px); color: #fff; }
 .community-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.community p:not(.eyebrow) { margin: 14px 0 30px; color: rgba(255, 255, 255, 0.88); font-size: 17px; }
+.community p { margin: 14px 0 30px; color: rgba(255, 255, 255, 0.88); font-size: 17px; }
 .community-mark { width: clamp(220px, 28vw, 340px); opacity: 0.95; }
 
 /* ---------- Footer ---------- */

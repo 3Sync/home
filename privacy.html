@@ -13,13 +13,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
   <script>document.documentElement.classList.add("js");</script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <nav class="nav container" aria-label="Main">
       <a class="brand" href="index.html" aria-label="ThreeSync home">
         <img class="brand-icon" src="assets/brand/favicon.png" alt="" width="32" height="32">
@@ -84,13 +84,13 @@
         Our models run entirely inside the Roblox experience they are added to. They do not send any data to ThreeSync or to any outside server.
       </p>
       <p>
-        To work, some models save player data using Roblox DataStores that belong to that experience. This data is stored on Roblox's
-        platform and controlled by the experience's owner, not by ThreeSync. For example:
+        Some models need to keep player data to work. This data stays within that experience on Roblox's platform and is
+        controlled by the experience's owner, not by ThreeSync:
       </p>
       <ul>
-        <li><strong>Time Played Board:</strong> a player's Roblox user ID and total time played, used to rank the most active players.</li>
-        <li><strong>Donation Board:</strong> a player's Roblox user ID and total amount donated, used to rank top donors and award chat tags. Purchases are processed by Roblox, and no payment details are visible to the model or to us.</li>
-        <li><strong>Admin System:</strong> moderation records, such as bans, linked to a player's Roblox user ID.</li>
+        <li><strong>Time Played Board:</strong> saves a player's Roblox user ID and total time played to the experience's DataStores, used to rank the most active players.</li>
+        <li><strong>Donation Board:</strong> saves a player's Roblox user ID and total amount donated to the experience's DataStores, used to rank top donors and award chat tags. Purchases are processed by Roblox, and no payment details are visible to the model or to us.</li>
+        <li><strong>Admin System:</strong> does not save anything to DataStores. Bans that last beyond a single server use Roblox's built-in Ban API, so Roblox stores and manages them for that experience. Server-only actions are held in that server's memory and are cleared when the server shuts down.</li>
       </ul>
     </section>
 
@@ -156,6 +156,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
