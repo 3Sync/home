@@ -332,7 +332,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .badge-free {
   position: absolute;
-  top: 14px; left: 14px;
+  top: 14px; right: 14px;
   padding: 5px 10px;
   border-radius: 999px;
   background: var(--brand);

@@ -19,8 +19,8 @@ assets/
     apple-touch-icon.png          180×180 home-screen icon
   products/
     admin-system.png
-    donation-board.png
-    time-played-board.png
+    donation-board.jpg
+    time-played-board.jpg
 ```
 
 ## Adding a model
