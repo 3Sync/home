@@ -39,3 +39,7 @@ All asset paths are relative, so the site also works on a custom domain or at a 
 ## Local preview
 
 Open `index.html` directly, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
+
+## Updating styles or scripts
+
+Browsers cache `style.css` and `script.js`. After changing either file, bump the `?v=` number on their `<link>`/`<script>` tags in **both** `index.html` and `privacy.html` so visitors get the new version straight away.
