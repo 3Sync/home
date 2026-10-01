@@ -226,13 +226,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .eyebrow--light { color: rgba(255, 255, 255, 0.85); }
 
-.dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--brand);
-  box-shadow: 0 0 0 4px var(--brand-soft);
-}
-
 .section { padding-block: clamp(72px, 10vw, 120px); }
 .section--tight { padding-top: 0; }
 
@@ -416,6 +409,42 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--text-faint);
   font-size: 14px;
 }
+
+/* ---------- Legal pages ---------- */
+
+.legal { max-width: 760px; padding-block: clamp(48px, 8vw, 96px); }
+.legal-head h1 { font-size: clamp(36px, 5vw, 52px); letter-spacing: -0.03em; }
+.legal-meta { margin-top: 12px; color: var(--text-faint); font-size: 14px; }
+
+.legal-summary {
+  margin: 40px 0 8px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand);
+  border-radius: var(--radius);
+}
+.legal-summary h2 { margin-bottom: 8px; font-size: 18px; }
+
+.legal section { margin-top: 44px; }
+.legal section h2 { margin-bottom: 14px; font-size: 22px; }
+.legal p, .legal li { color: var(--text-muted); }
+.legal p + p, .legal p + ul, .legal ul + p { margin-top: 14px; }
+.legal ul { padding-left: 20px; list-style: disc; }
+.legal li + li { margin-top: 10px; }
+.legal li::marker { color: var(--brand); }
+.legal strong { color: var(--text); font-weight: 600; }
+.legal p a, .legal li a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--brand);
+  text-underline-offset: 3px;
+  transition: color 0.2s var(--ease);
+}
+.legal p a:hover, .legal li a:hover { color: var(--brand-hover); }
+
+.footer-legal a { color: var(--text-muted); margin-left: 12px; transition: color 0.2s var(--ease); }
+.footer-legal a:hover { color: var(--text); }
 
 /* ---------- Scroll reveal (enabled by script.js) ---------- */
 

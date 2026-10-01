@@ -5,7 +5,8 @@ Static site for ThreeSync, a Roblox development group. It showcases our free Cre
 ## Structure
 
 ```
-index.html            Page markup
+index.html            Home page
+privacy.html          Privacy policy
 style.css             All styles
 script.js             Mobile menu, scroll reveal, active nav link
 .nojekyll             Serve files as-is on GitHub Pages
